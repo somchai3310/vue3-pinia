@@ -46,12 +46,13 @@ watch([firstname, lastname], (newData) => {
 
 <template>
   <div>
+    <div>Getter fullname : {{ userStore.fullname }}</div>
     <div>
       Profile from stores
       <div>Firstname {{ userStore.firstname }}</div>
       <div>Lastname {{ userStore.lastname }}</div>
     </div>
-    <div v-if="isUpdate" style="color: red;">profile up to date</div>
+    <div v-if="isUpdate" style="color: red">profile up to date</div>
     <hr />
     <h1>Profile vue</h1>
     <div>Firstname <input type="text" v-model="firstname" /></div>

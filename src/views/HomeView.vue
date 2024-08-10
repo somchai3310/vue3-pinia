@@ -8,6 +8,12 @@ const userStore = useUserStore()
 <template>
   <div>
     <h1>Hello Home</h1>
+    <div>
+      Your Profile
+      <div>Firstname: {{ userStore.firstname }}</div>
+      <div>Lastname: {{ userStore.lastname }}</div>
+      <div>Fullname: {{ userStore.fullname }}</div>
+    </div>
     <!-- router -->
     <!-- <div>
       <router-link :to="{ name: 'profile', query: { user_id: 1 } }">
